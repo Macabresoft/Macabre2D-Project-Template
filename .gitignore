@@ -3,6 +3,9 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/main/VisualStudio.gitignore
 
+# Macabre2D Settings File
+*settings.m2deditor # Remove this if you want this shared in a repo
+
 # User-specific files
 *.rsuser
 *.suo
