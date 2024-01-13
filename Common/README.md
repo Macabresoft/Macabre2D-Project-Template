@@ -29,3 +29,9 @@ Do not delete the InputAction enum.
 Layers are a core component of Macabre2D. Both the rendering and physics of Macabre2D use bitwise operations on the Layers enum. This enum is serialized as a numeric value, so feel free to rename the layers per project. 
 
 Do not delete the Layers enum.
+
+## Other
+
+### SaveManager
+
+A class to which `BaseGame` provides access. Not every game will have the same save systems, so there is no general save system provided by Macabre2D. Instead, this class should be constructed and used on a game by game basis.
