@@ -59,3 +59,14 @@ public enum Layers : ushort {
     [Display(Name = "Layer 15")]
     Layer15 = 1 << 15
 }
+
+/// <summary>
+/// Helper methods for <see cref="Layers" />
+/// </summary>
+public static class LayersHelpers {
+    /// <summary>
+    /// Gets all values as one instance of <see cref="Layers" />.
+    /// </summary>
+    /// <returns>All <see cref="Layers" /> values.</returns>
+    public static Layers GetAll() => Enum.GetValues<Layers>().Aggregate(Layers.None, (current, layer) => current | layer);
+}
