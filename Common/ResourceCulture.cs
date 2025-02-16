@@ -20,7 +20,7 @@ public static class ResourceCultureExtensions {
     /// <returns>The culture's name.</returns>
     public static string ToCultureName(this ResourceCulture culture) {
         return culture switch {
-            _ => "default"
+            _ => "en"
         };
     }
 
