@@ -25,5 +25,7 @@ public abstract class CopyableSettings<T> : VersionedData where T : CopyableSett
     /// </summary>
     /// <remarks>This method is required by Macabre2D.</remarks>
     /// <param name="other">The other instance.</param>
-    public abstract void CopyTo(T other);
+    public virtual void CopyTo(T other) {
+        other.Version = this.Version;
+    }
 }

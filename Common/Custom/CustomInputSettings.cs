@@ -9,5 +9,7 @@ using System.Runtime.Serialization;
 public class CustomInputSettings : CopyableSettings<CustomInputSettings> {
     /// <inheritdoc />
     public override void CopyTo(CustomInputSettings other) {
+        base.CopyTo(other);
+        // TODO: copy more
     }
 }

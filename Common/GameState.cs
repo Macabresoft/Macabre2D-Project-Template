@@ -13,8 +13,8 @@ public class GameState {
     /// Initializes this instance.
     /// </summary>
     /// <param name="dataManager">The data manager.</param>
-    /// <param name="customSettings">The custom settings.</param>
-    public void Initialize(IDataManager dataManager, CustomSettings customSettings) {
+    /// <param name="gameplaySettings">The custom settings.</param>
+    public void Initialize(IDataManager dataManager, GameplaySettings gameplaySettings) {
         this._dataManager = dataManager;
     }
 }
